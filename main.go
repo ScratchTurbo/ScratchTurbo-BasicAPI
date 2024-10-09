@@ -208,14 +208,14 @@ func main() {
 	})
 
 	// status endpoint
-	//app.Get("/status", func(c *fiber.Ctx) error {
-		//return c.JSON(currentStatus)
-	//})
+	app.Get("/status", func(c *fiber.Ctx) error {
+		return c.JSON(currentStatus)
+	})
 
 	// latest updates endpoint
-	//app.Get("/updates", func(c *fiber.Ctx) error {
-		//return c.JSON(currentUpdate)
-	//})
+	app.Get("/updates", func(c *fiber.Ctx) error {
+		return c.JSON(currentUpdate)
+	})
 
 	// recent commits endpoint
 	app.Get("/commits", func(c *fiber.Ctx) error {
@@ -242,6 +242,7 @@ func getRecentsCommits() {
 		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Storage/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Home/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-API/commits?per_page=50",
+		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-BasicAPI/commits?per_page=50",
 	}
 
 	var newRecentCommits []GHApiCommit
