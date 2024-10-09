@@ -1,0 +1,13 @@
+modules = ["go-1.21", "bash"]
+run = "go run main.go"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "go run main.go"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
