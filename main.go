@@ -228,21 +228,11 @@ func main() {
 
 func getRecentsCommits() {
 	githubCommitApis := []string{
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-ObjectLibraries/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Vm/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-BasicAPIService/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Parser/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Blocks/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Paint/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Render/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Desktop/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-ExtensionsGallery/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Audio/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-render-fonts/commits?per_page=50",
-		"https://api.github.com/repos/DevevolperPlus/ScratchTurbo-Storage/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Home/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-API/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-BasicAPI/commits?per_page=50",
+		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Docs/commits?per_page=50",
+		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-ObjectLibraries/commits?per_page=50",
 	}
 
 	var newRecentCommits []GHApiCommit
