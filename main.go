@@ -234,6 +234,7 @@ func getRecentsCommits() {
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Docs/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-ObjectLibraries/commits?per_page=50",
 		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Packager/commits?per_page=50",
+		"https://api.github.com/repos/ScratchTurbo/ScratchTurbo-Studios/commits?per_page=50",
 	}
 
 	var newRecentCommits []GHApiCommit
